@@ -1,0 +1,374 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body.index {
+    background-color: rgba(255, 166, 0, 0.445);
+    zoom: 70%;
+}
+
+
+
+
+
+/* Titre + slider*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header h1{
+    font-size: 90px;
+    text-align: center;
+}
+
+header p {
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.title-box {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.6;
+    position: absolute;
+    z-index: 999;
+    padding: 20px 50px 0px 50px;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2); */
+}
+
+.title-box:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/* .title-box:hover {
+    transform: scale(1.05);
+    transition: 0.3s all;
+} */
+
+
+.title-box p{
+    font-style: italic;
+    padding : 0;
+    margin-top: 0px ;
+}
+
+
+
+
+/* Petit paragraphe intro */
+
+
+.intro{
+
+    width: 1390x;
+    padding : 5px;
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-right: 60px;
+    height: 200px;
+    display: flex;
+    font-size: 28px;
+    background: url(../images/saintcyr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.intro p{
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bolder;
+    margin-top: 50px;
+    z-index: 10;
+}
+
+/* .intro:hover{
+    transform: scale(1.02);
+    transition: 0.3s all;
+} */
+
+
+
+
+
+
+
+/* slider */
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 6150px;
+    height: 662px;
+    animation: glisse 80s infinite ease;
+}
+
+.slide {
+    opacity: 1;
+}
+
+@keyframes glisse{
+
+    0% {
+        transform: translateX(-3900px); 
+        /* -4300 */
+    }
+ 
+    50% {
+        transform: translateX(1700px);
+        /* 2100 */
+    }
+
+    100% {
+        transform: translateX(-3900px);
+        /* -4370 */
+    }
+}
+
+
+
+
+
+
+/* sections article */
+
+.item {
+    background-color: white;
+    margin: 50px;
+    display: flex;
+    /* cursor: pointer; */
+    transition: 0.3s all;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hover:hover {
+    transform: scale(1.05);
+    transition: 0.3s all;
+}
+
+.item:hover {
+    transition: 0.3s all;
+    box-shadow: -8px 8px 2px 5px rgba(0, 0, 0, .1);
+}
+
+.item-infos {
+    padding: 0px 10px 10px 10px;
+    line-height: 80px;
+}
+
+.item-infos h1{
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0px 0px 0px 10px;
+    font-size:25px;
+    color: black;
+}
+
+
+.item p{
+	/* text-decoration: none; */
+	/* font-weight: bold; */
+    font-size:15px;
+    margin: 15px 20px 0px 15px;
+    color: black;
+    line-height: 30px;
+}
+
+section {
+    padding: 50px;
+    font-family: 'Martel', serif;
+}
+
+.item-infos hr {
+    margin: -25px 0 6px 10px;
+    opacity: 1;
+}
+
+
+section img {
+    width: 200px;
+    height: auto;
+}
+
+
+
+
+/* pied de page */
+
+footer p {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Martel', serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* page cours */
+
+
+
+
+
+.explication {
+    margin-top: 40px;
+}
+
+.explication div h1, p{
+	margin :30px;
+}
+
+
+.cours {
+    background : url(../images/fondcours.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    zoom: 90%;
+}
+
+
+header.cours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titre{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold ;
+    opacity: 01;
+    z-index: 1;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.cours footer p{
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+.explication div{
+	display: inline-block;
+    width: 45%;
+    background-color : orange;
+    /* border: solid red; */
+}
+
+.explication div:hover {
+    transition: 0.3s all;
+    box-shadow: -2px 2px 2px 5px rgba(0, 0, 0, .1);
+    /* transform: scale(1.03); */
+}
+
+.rightbox{
+    background: url(../images/visio3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: top;
+    margin: 60px 0px 0px 60px;
+}
+
+.rightbox p{
+    color: white;
+    font-size: 20px;
+    font-size: 23px;
+}
+
+.rightbox h1{
+    color: white;
+}
+
+
+.leftbox-2{
+    background: url(../images/butbia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px 0px 0px 60px;
+}
+
+.leftbox-2 p{
+    color: white;
+    font-size: 20px;
+    font-size: 23px;
+}
+
+.leftbox-2 h1{
+    color: white;
+}
+
+
+.rightbox-2{
+    background: url(../images/nuage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -50px 0px 0px 60px;
+    
+}
+
+.rightbox-2 p{
+    color: white;
+    font-size: 20px;
+    font-size: 23px;
+}
+
+.rightbox-2 h1{
+    color: white;
+}
+
+
+.leftbox{
+    background: url(../images/metier.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 60px 0px 0px 60px;
+}
+
+.leftbox p{
+    color: white;
+    font-size: 20px;
+    font-size: 23px;
+}
+
+.leftbox h1{
+    color: white;
+}

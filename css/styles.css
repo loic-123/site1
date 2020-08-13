@@ -251,9 +251,9 @@ footer p {
 
 
 .cours {
-    background : url(../images/fondcours.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color : grey;
+/*     background-size: cover;
+    background-repeat: no-repeat; */
     zoom: 90%;
 }
 
